@@ -1,0 +1,23 @@
+<form [formGroup]="etudiantForm" (ngSubmit)="testAdd1()">
+ CIN : <input type="text" formControlName="cin"><br>
+    Reponse : <input type="text" formControlName="Reponse"><br>
+    
+    <div *ngIf="cin.invalid && (cin.touched || cin.dirty)">
+        <div *ngIf="cin.errors!['required']">cin is required</div>
+        <div *ngIf="cin.errors!['minlength']">cin is short</div>
+        <div *ngIf="cin.errors!['maxLength']">cin est long</div>
+        <div *ngIf="cin.errors!['pattern']">cin doit utiliser que des chiffre</div>
+
+       </div>
+       <div *ngIf="Reponse.invalid && (Reponse.touched || Reponse.dirty)">
+        <div *ngIf="Reponse.errors!['required']">Reponse is required</div>
+       
+       </div>
+       
+    <td><button [disabled]="etudiantForm.invalid">OK</button></td>
+    <p>la question de l'enseignant{{questionE}}</p>
+    <input type="text"  [(ngModel)]= "reponseE">
+    <button (click)="envoiR()">EnvoyerR</button>
+
+    
+</form>

@@ -1,0 +1,13 @@
+<form [formGroup]="userForm" (ngSubmit)="testAdd1()">
+    First Name : <input type="text" formControlName="firstName"><br>
+    Last Name: <input type="text" formControlName="lastName"><br>
+    <div *ngIf="lastName.invalid && (lastName.touched || lastName.dirty)">
+     <div *ngIf="lastName.errors!['required']">Last Name is required</div>
+     <div *ngIf="lastName.errors!['minlength']">Last Name is short</div>
+    </div>
+    Adresse : <div formGroupName="address">
+    City : <input type="text" formControlName="city"><br>
+    Street : <input type="text" formControlName="street"><br>
+    </div>
+    <input type="submit" value="add">
+    </form>

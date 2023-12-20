@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+
+  "profile": {
+    "name": "typicode"
+  },
+
+  
+    "appartement": [
+    { "id": 1,"apartNum": "251","floorNum": 44,"surface": "55","terrace":
+    "yes","surfaceTerrace": "","category": "test","description": "Consectetur perfere","residence": {"id": 1,"name": "El fel","address": "Borj Cedria","image": "../../assets/images/R1.jpeg"
+  } }],
+
+  "appartement": [
+    { "id": 2,"apartNum": "250","floorNum": 44,"surface": "70","terrace":
+    "yes","surfaceTerrace": "","category": "test","description": "Consectetur perfere","residence": {"id": 1,"name": "El fel","address": "Borj Cedria","image": "../../assets/images/R1.jpeg"
+  } }]
+    
+    
+
+}
